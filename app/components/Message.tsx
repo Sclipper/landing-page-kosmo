@@ -11,9 +11,9 @@ function Message() {
           Crushing the competition in crypto
         </h2>
         <p className="text-sm md:text-xs md:w-1/2">
-          Bulldozer (DOZER) is not just a cryptocurrency; it's a symbol of strength and
-          innovation. Inspired by the durability of the iconic construction machine, it
-          aims to clear a path through the cryptocurrency landscape, ushering in new
+          Bulldozer (DOZER) is not just a cryptocurrency; it&apos;s a symbol of strength
+          and innovation. Inspired by the durability of the iconic construction machine,
+          it aims to clear a path through the cryptocurrency landscape, ushering in new
           opportunities.
         </p>
       </div>
