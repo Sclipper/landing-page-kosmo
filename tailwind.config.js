@@ -22,6 +22,9 @@ module.exports = {
       animation: {
         'slow-spin': 'slowspin 20s linear infinite',
       },
+      fontFamily: {
+        sans: ['Clash Display', 'Clash Display Bold', 'Helvetica', 'sans-serif'],
+      },
     },
   },
   plugins: [],
