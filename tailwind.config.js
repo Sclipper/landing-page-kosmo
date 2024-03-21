@@ -12,6 +12,7 @@ module.exports = {
     extend: {
       colors: {
         'dozzer-orange': '#F17101',
+        'dozzer-yellow': '#F9A301',
       },
       keyframes: {
         slowspin: {
