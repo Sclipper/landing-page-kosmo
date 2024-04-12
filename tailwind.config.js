@@ -14,6 +14,11 @@ module.exports = {
         'dozzer-orange': '#F17101',
         'dozzer-yellow': '#F9A301',
       },
+      fontSize: {
+        header: '32px', // Header text size 32px
+        subheader: '24px', // Subheader text size 24px
+        bodytext: '16px', // Body text size 16px
+      },
       keyframes: {
         slowspin: {
           '0%': { transform: 'rotate(0deg)' },
