@@ -41,8 +41,8 @@ function HowToBuy() {
   return (
     <div className="flex flex-col gap-10 justify-center py-8">
       <div className="flex flex-col gap-5 items-center">
-        <p className="text-2xl"> How to buy</p>
-        <p className="text-5xl font-bold text-dozzer-orange">$DOZZER</p>
+        <p className="text-header"> How to buy</p>
+        <p className="text-header font-bold text-dozzer-orange">$DOZZER</p>
       </div>
       <div className="flex justify-center gap-10 lg:flex-row flex-col">
         {steps.map((step) => (

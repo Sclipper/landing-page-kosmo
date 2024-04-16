@@ -24,8 +24,8 @@ function DozzerNomicsLg({
   return (
     <div className="flex flex-col gap-10">
       <div className="flex justify-center">
-        <p className="text-5xl text-dozzer-orange font-bold">DOZZER</p>
-        <p className="text-5xl font-bold">NOMICS</p>
+        <p className="text-header text-dozzer-orange font-bold">DOZZER</p>
+        <p className="text-header font-bold">NOMICS</p>
       </div>
       <div className="flex gap-1 justify-center">
         <p className="text-2xl text-dozzer-orange font-semibold">{totalSupply}</p>

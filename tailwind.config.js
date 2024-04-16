@@ -9,6 +9,10 @@ module.exports = {
     './src/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    screens: {
+      lg: '1102px', // Change the lg breakpoint to 1023px
+      md: '974px',
+    },
     extend: {
       colors: {
         'dozzer-orange': '#F17101',
@@ -18,6 +22,9 @@ module.exports = {
         header: '32px', // Header text size 32px
         subheader: '24px', // Subheader text size 24px
         bodytext: '16px', // Body text size 16px
+      },
+      borderRadius: {
+        md: '20px',
       },
       keyframes: {
         slowspin: {

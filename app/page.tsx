@@ -9,16 +9,31 @@ import Roadmap from './components/Roadmap'
 export default function Home() {
   return (
     <div
-      className="lg:px-20 px-4 py-8 sm:py-4"
-      style={{ maxWidth: '1920px', margin: '0 auto' }}
+      className="lg:px-20 px-4 md:py-8 py-4"
+      style={{
+        maxWidth: '1920px',
+        margin: '0 auto',
+        backgroundColor: '#131621',
+      }}
     >
       <div className="flex flex-col gap-20">
         <Header />
-        <Intro />
-        <Message />
-        <HowToBuy />
-        <DozzerNomics />
-        <Roadmap />
+        <div id="what-is-dozzer">
+          <Intro />
+        </div>
+        <div id="message">
+          <Message />
+        </div>
+        <div id="how-to-buy">
+          <HowToBuy />
+        </div>
+        <div id="tokenomics">
+          <DozzerNomics />
+        </div>
+        <div id="roadmap">
+          <Roadmap />
+        </div>
+        <div id="airdrop">{/* Airdrop section content here */}</div>
         <Footer />
       </div>
     </div>

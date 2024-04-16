@@ -18,11 +18,11 @@ function Roadmap() {
   ]
   return (
     <div>
-      <p className="text-5xl font-bold">ROADMAP</p>
+      <p className="text-header text-center lg:text-left font-bold">ROADMAP</p>
       <div className="hidden lg:block relative p-16 h-80">
         <RoadmapLg roadmap={roadmap} />
       </div>
-      <div className="flex lg:hidden flex-col gap-10 pt-10">
+      <div className="flex lg:hidden flex-col gap-24 pt-10">
         <RoadmapSm roadmap={roadmap} />
       </div>
     </div>

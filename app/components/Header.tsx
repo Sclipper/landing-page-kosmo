@@ -12,8 +12,8 @@ function Header() {
       <div className="flex justify-between items-center">
         {/* Logo */}
         <div className="flex gap-1 cursor-pointer">
-          <p className="text-2xl  text-dozzer-orange  font-bold">(Bull)</p>
-          <p className="text-2xl font-bold">DOZZER</p>
+          <p className="text-header text-dozzer-orange  font-bold">(Bull)</p>
+          <p className="text-header font-bold">DOZZER</p>
         </div>
         {/* Mid */}
         <div className="hidden md:flex">
@@ -36,18 +36,35 @@ function Header() {
         </div>
       </div>
       {/* Menu Panel */}
-      {isOpen ?? (
-        <div
-          className={`fixed right-0 top-0 bottom-0 w-3/4 bg-black text-white z-20 transform transition-all duration-500 ease-in-out ${
-            isOpen ? 'translate-x-0' : 'translate-x-full'
-          }`}
-          style={{
-            boxShadow: '-5px 0 10px rgba(0, 0, 0, 0.5)',
-          }}
-        >
-          <div className="flex flex-col items-start justify-between min-h-full p-4">
-            <Sections />
-            <SocialMedia />
+
+      {isOpen && (
+        <div className="fixed inset-0 z-40 bg-black bg-opacity-75">
+          <div className="fixed inset-0 flex flex-col py-1 px-4 bg-gray-800">
+            <div className="flex justify-between align-middle items-center mt-3">
+              <div className="flex gap-1 cursor-pointer">
+                <p className="text-header text-dozzer-orange  font-bold">(Bull)</p>
+                <p className="text-header font-bold">DOZZER</p>
+              </div>
+              <button type="button" onClick={() => setIsOpen(false)}>
+                <Image
+                  onClick={() => setIsOpen(!isOpen)}
+                  className="cursor-pointer"
+                  src="/menu.svg"
+                  alt="menu"
+                  width={32}
+                  height={32}
+                />
+              </button>
+            </div>
+            <div className="mb-4">
+              <Image src="/line.svg" alt="line" width={5000} height={1000} />
+            </div>
+            <div className="flex-grow">
+              <Sections setIsOpen={setIsOpen} orientation="col" items="center" />
+            </div>
+            <div className="flex items-center justify-center">
+              <SocialMedia />
+            </div>
           </div>
         </div>
       )}
