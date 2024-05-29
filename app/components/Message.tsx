@@ -11,7 +11,11 @@ function Message() {
   useEffect(() => {
     const message = params.get('message')
     if (message === 'success') {
-      toast.success('Успешно записване!', { autoClose: 3000 })
+      toast.success('Успешно записване!', { autoClose: 1500 })
+      router.push('/')
+    }
+    if (message === 'fail') {
+      toast.error('Грешка при записване. Опитайте отново.', { autoClose: 1500 })
       router.push('/')
     }
   }, [params, router])
