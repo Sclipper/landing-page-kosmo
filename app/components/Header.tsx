@@ -8,7 +8,7 @@ function Header() {
       <Link href="/">
         <Image
           src="/logo.png"
-          alt="Dozzer Logo"
+          alt="Kosmo labs Logo"
           width={55}
           height={20}
           className="rounded-full"
@@ -16,9 +16,9 @@ function Header() {
       </Link>
       <div className="flex">
         <button type="button" className="px-4 py-2 rounded-lg">
-          <Link href="/team" locale="bg">
+          {/* <Link href="/team" locale="bg">
             Отбор
-          </Link>
+          </Link> */}
         </button>
         <EarlyAccessButton />
       </div>

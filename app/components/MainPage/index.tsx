@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import EarlyAccessButton from '../Ui/EarlyAccessButton'
+import Message from '../Message'
 
 function MainPage() {
   return (
@@ -11,7 +12,7 @@ function MainPage() {
           <div className="flex justify-between">
             <div className="flex flex-col justify-evenly items-start w-2/5">
               <h1 className="text-3xl font-bold ">
-                Автоматизирайте попълването на формуляри с нашето Chrome разширение
+                Спестете 5-15 минути всеки път в който трябва да попълните този формуляр.
               </h1>
               <p className="mt-3 text-lg">
                 Нашето разширение за Chrome ви позволява да попълвате формуляри бързо и
@@ -42,6 +43,7 @@ function MainPage() {
           </div>
         </div>
       </main>
+      <Message />
     </div>
   )
 }
