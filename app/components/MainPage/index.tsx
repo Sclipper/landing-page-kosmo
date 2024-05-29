@@ -4,7 +4,7 @@ import EarlyAccessButton from '../Ui/EarlyAccessButton'
 function MainPage() {
   return (
     <div>
-      <title>Hiflow Landing Page</title>
+      <title>Космо лабс</title>
 
       <main className="p-8 py-1">
         <div className="max-w-7xl mx-auto">
