@@ -3,9 +3,7 @@ import mailchimp from '@mailchimp/mailchimp_marketing'
 import { NextResponse } from 'next/server'
 
 const API_KEY = process.env.NEXT_EMAIL_KEY!
-const mailchimpClient = require('@mailchimp/mailchimp_transactional')(
-  '7395f7f95d63a982c78fccb58396762d-us12'
-)
+const mailchimpClient = require('@mailchimp/mailchimp_transactional')(API_KEY)
 
 const LIST_ID = process.env.NEXT_AUDIENCE_ID!
 const DATACENTER = API_KEY?.split('-')?.[1]
