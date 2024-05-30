@@ -12,7 +12,7 @@ function MainPage() {
           <div className="flex justify-between flex-col md:flex-row">
             <div className="flex flex-col justify-evenly items-start md:w-2/5 gap-2 md:gap-0">
               <h1 className="text-3xl font-bold ">
-                Спестете 5-15 минути всеки път който попълвате този формуляр.
+                Спестете до 30 минути всеки път в който попълвате този документ.
               </h1>
               <p className="mt-3 text-lg">
                 Нашето разширение за Chrome ви позволява да попълвате формуляри бързо и

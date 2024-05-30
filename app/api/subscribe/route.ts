@@ -3,6 +3,10 @@ import mailchimp from '@mailchimp/mailchimp_marketing'
 import { NextResponse } from 'next/server'
 
 const API_KEY = process.env.NEXT_EMAIL_KEY!
+const mailchimpClient = require('@mailchimp/mailchimp_transactional')(
+  '7395f7f95d63a982c78fccb58396762d-us12'
+)
+
 const LIST_ID = process.env.NEXT_AUDIENCE_ID!
 const DATACENTER = API_KEY?.split('-')?.[1]
 
@@ -28,6 +32,12 @@ export async function POST(req: Request, res: NextApiResponse) {
       },
     })
 
+    const welcomeMessage = await mailchimpClient.messages.sendTemplate({
+      template_name: 'Welcome mail',
+      template_content: [{}],
+      message: {},
+    })
+    console.log('welcomeMessage', welcomeMessage)
     return NextResponse.json(response)
   } catch (error: any) {
     console.log('error.response.text.title', error)

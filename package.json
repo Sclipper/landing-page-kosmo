@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@mailchimp/mailchimp_marketing": "^3.0.80",
+    "@mailchimp/mailchimp_transactional": "^1.0.59",
     "@types/mailchimp__mailchimp_marketing": "^3.0.20",
     "@types/node": "20.2.3",
     "@types/react": "18.2.7",
