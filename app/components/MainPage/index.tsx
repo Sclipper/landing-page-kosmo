@@ -12,7 +12,7 @@ function MainPage() {
           <div className="flex justify-between">
             <div className="flex flex-col justify-evenly items-start w-2/5">
               <h1 className="text-3xl font-bold ">
-                Спестете 5-15 минути всеки път в който трябва да попълните този формуляр.
+                Спестете 5-15 минути всеки път който попълвате този формуляр.
               </h1>
               <p className="mt-3 text-lg">
                 Нашето разширение за Chrome ви позволява да попълвате формуляри бързо и
@@ -33,7 +33,7 @@ function MainPage() {
             <div style={{ height: '30rem	' }} className="aspect-w-16 aspect-h-9 mt-4">
               <iframe
                 style={{ maxWidth: '810px' }}
-                src="https://www.loom.com/embed/b8e7892625184c778565c41afb6e1281?sid=d2bf81b8-32cc-40c5-8732-a01b3a991890"
+                src="https://www.loom.com/embed/b8e7892625184c778565c41afb6e1281?sid=613cc244-e589-4fec-845e-c4404a497286"
                 title="Demo Video"
                 allowFullScreen
                 width="100%"
