@@ -9,8 +9,8 @@ function MainPage() {
 
       <main className="p-8 py-1">
         <div className="max-w-7xl mx-auto">
-          <div className="flex justify-between">
-            <div className="flex flex-col justify-evenly items-start w-2/5">
+          <div className="flex justify-between flex-col md:flex-row">
+            <div className="flex flex-col justify-evenly items-start md:w-2/5 gap-2 md:gap-0">
               <h1 className="text-3xl font-bold ">
                 Спестете 5-15 минути всеки път който попълвате този формуляр.
               </h1>

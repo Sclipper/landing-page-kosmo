@@ -1,10 +1,10 @@
-import type { NextApiRequest, NextApiResponse } from 'next'
+import type { NextApiResponse } from 'next'
 import mailchimp from '@mailchimp/mailchimp_marketing'
 import { NextResponse } from 'next/server'
 
 const API_KEY = process.env.NEXT_EMAIL_KEY!
 const LIST_ID = process.env.NEXT_AUDIENCE_ID!
-const DATACENTER = API_KEY.split('-')[1]
+const DATACENTER = API_KEY?.split('-')?.[1]
 
 mailchimp.setConfig({
   apiKey: API_KEY,
