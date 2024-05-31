@@ -8,7 +8,6 @@ export default function Home() {
       style={{
         maxWidth: '1920px',
         margin: '0 auto',
-        height: '100vh',
       }}
     >
       <Header />

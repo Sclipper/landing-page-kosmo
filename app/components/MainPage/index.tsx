@@ -30,7 +30,7 @@ function MainPage() {
           </div>
           <div className="mt-1">
             <h2 className="text-xl font-semibold">Гледайте нашето демо видео по-долу</h2>
-            <div style={{ height: '30rem	' }} className="aspect-w-16 aspect-h-9 mt-4">
+            <div style={{ height: '30rem' }} className="aspect-w-16 aspect-h-9 mt-4">
               <iframe
                 style={{ maxWidth: '810px' }}
                 src="https://www.loom.com/embed/b8e7892625184c778565c41afb6e1281?sid=613cc244-e589-4fec-845e-c4404a497286"
