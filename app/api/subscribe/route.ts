@@ -14,6 +14,7 @@ mailchimp.setConfig({
 })
 
 export async function POST(req: Request, res: NextApiResponse) {
+  console.log('hit the api')
   const data = await req.json()
 
   const { email, firstName, lastName, jobTitle, companyWebsite, companySize } = data
