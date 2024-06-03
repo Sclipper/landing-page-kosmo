@@ -1,1 +1,1 @@
-export const emailKey = process.env.NEXT_PUBLIC_EMAIL_KEY
+export const emailKey = process.env.NEXT_EMAIL_KEY
