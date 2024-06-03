@@ -43,7 +43,7 @@ export async function POST(req: Request, res: NextApiResponse) {
     if (error?.response?.body?.title === 'Member Exists') {
       return NextResponse.json({ message: 'You are already subscribed' })
     }
-    return res.status(500).json({ message: error.message })
+    return NextResponse.error()
   }
 }
 
