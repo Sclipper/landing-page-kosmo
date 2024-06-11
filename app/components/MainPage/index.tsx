@@ -47,16 +47,9 @@ function MainPage() {
               style={{ borderRadius: '0.5rem' }}
               src="/gif2.gif"
               alt="gif"
-              width="500"
+              width="650"
               height="500"
             />
-            {/* <iframe
-              src="https://www.loom.com/embed/1130ca79857f4e6ebe84e9147007c4d8?sid=98574b66-dc68-400f-80ca-f2bd4030439f"
-              title="Demo Video"
-              allowFullScreen
-              width="100%"
-              height="100%"
-            /> */}
           </div>
         </div>
         <SeeMore />
