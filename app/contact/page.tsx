@@ -2,11 +2,12 @@
 
 import * as React from 'react'
 import Header from '../components/Header'
+import { colorTheme } from '../colors'
 
 function ContactPage() {
   return (
     <div
-      className="px-4 py-4 bg-violet-100 flex flex-col gap-5 shadow-lg"
+      className={`px-4 py-4 bg-${colorTheme}-100 flex flex-col gap-5 shadow-lg`}
       style={{
         maxWidth: '1920px',
         margin: '0 auto',

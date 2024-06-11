@@ -4,6 +4,7 @@ import * as React from 'react'
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import { useRouter } from 'next/navigation'
 import Header from '../components/Header'
+import { colorTheme } from '../colors'
 
 function FormPage() {
   const router = useRouter()
@@ -45,7 +46,7 @@ function FormPage() {
 
   return (
     <div
-      className="px-4 py-4 bg-violet-100 flex flex-col gap-5 shadow-lg"
+      className={`px-4 py-4 bg-${colorTheme}-100 flex flex-col gap-5 shadow-lg`}
       style={{
         maxWidth: '1920px',
         margin: '0 auto',
@@ -149,7 +150,7 @@ function FormPage() {
               <button
                 onSubmit={(e) => handleSubmit(e)}
                 type="submit"
-                className="px-6 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-violet-800 hover:bg-violet-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                className={`px-6 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-${colorTheme}-800 hover:bg-${colorTheme}-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500`}
               >
                 Изпрати
               </button>

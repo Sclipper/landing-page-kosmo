@@ -23,6 +23,18 @@ module.exports = {
           800: '#ab4aba', // violet9
           900: '#953ea3', // violet11 (darker variant for high contrast, violet10 can be too close in lightness to violet9)
         },
+        teal: {
+          50: '#FAFEFD', // violet1
+          100: '#F3FBF9', // violet2
+          200: '#E0F8F3', // violet3
+          300: '#CCF3EA', // violet4
+          400: '#B8EAE0', // violet5
+          500: '#A1DED2', // violet6
+          600: '#83CDC1', // violet7
+          700: '#53B9AB', // violet8
+          800: '#12A594', // violet9
+          900: '#008573', // violet11 (darker variant for high contrast, violet10 can be too close in lightness to violet9)
+        },
         gray: {
           50: '#fcfcfc', // gray1
           100: '#f9f9f9', // gray2
