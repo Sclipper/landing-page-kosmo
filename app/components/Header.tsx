@@ -4,7 +4,13 @@ import EarlyAccessButton from './Ui/EarlyAccessButton'
 
 function Header() {
   return (
-    <div className="flex justify-between items-center">
+    <div
+      style={{
+        maxWidth: '1920px',
+        width: '100%',
+      }}
+      className="flex justify-between items-center"
+    >
       <Link href="/">
         <Image
           src="/logo.png"
