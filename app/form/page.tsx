@@ -8,7 +8,6 @@ import { colorTheme } from '../colors'
 
 function FormPage() {
   const router = useRouter()
-  // In your form component, add a submit handler
 
   const handleSubmit = async (event: any) => {
     event.preventDefault()
