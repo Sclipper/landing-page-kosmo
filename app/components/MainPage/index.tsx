@@ -89,7 +89,7 @@ function MainPage() {
             </div>
           </div>
 
-          <div className="flex flex-col w-full mt-1 h-3/4 gap-3">
+          <div className="flex flex-col w-full mt-1 h-4/5 gap-3">
             {/* Ensures that the div takes full viewport height */}
             <h2 className="text-2xl text-teal-600 font-semibold">Как работи?</h2>
             <h2 className="text-xl font-semibold">
