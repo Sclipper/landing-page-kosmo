@@ -20,7 +20,7 @@ function MainPage() {
                 задачи, като попълва формулярите вместо вас. Така ще спестите часове
                 повтаряща се ръчна работа всяка седмица.
               </p>
-              <EarlyAccessButton color={colorTheme} />
+              <EarlyAccessButton />
             </div>
 
             <Image
@@ -31,20 +31,16 @@ function MainPage() {
             />
           </div>
           <div className="flex flex-col gap-4 items-baseline mb-8 ">
-            <div className="text-center rounded-lg">
-              <h3 className="text-2xl font-semibold">Спестете време</h3>
-              {/* <p>
-                    Автоматизирайте рутинните задачи и фокусирайте се върху това, което
-                    има значение.
-                  </p> */}
+            <div className="text-start rounded-lg">
+              <h3 className="text-2xl font-semibold">Спестявате време</h3>
             </div>
-            <div className="text-center rounded-lg">
-              <h3 className="text-2xl font-semibold">
-                Увеличаване на производителността
+            <div className="text-start rounded-lg">
+              <h3 className="text-start text-2xl font-semibold">
+                Увеличавате на продуктивността.
               </h3>
             </div>
-            <div className="text-center rounded-lg">
-              <h3 className="text-2xl font-semibold">Избягване на грешки</h3>
+            <div className="text-start rounded-lg">
+              <h3 className="text-2xl font-semibold">Избягвате грешки</h3>
             </div>
           </div>
           <div className="mt-1">
@@ -65,7 +61,7 @@ function MainPage() {
             </div>
           </div>
           <div className="py-6">
-            <EarlyAccessButton color={colorTheme} />
+            <EarlyAccessButton />
           </div>
         </div>
       </main>
