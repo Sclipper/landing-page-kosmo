@@ -1,4 +1,3 @@
-import { colorTheme } from '@/app/colors'
 import Link from 'next/link'
 
 function EarlyAccessButton() {
@@ -6,7 +5,7 @@ function EarlyAccessButton() {
     <Link className="text-white" href="/form" locale="bg">
       <button
         type="button"
-        className={`bg-${colorTheme}-800 hover:bg-${colorTheme}-900 px-4 py-2 rounded-lg`}
+        className="bg-teal-800 hover:bg-teal-900 px-4 py-2 rounded-lg"
       >
         Получете ранен достъп
       </button>
