@@ -63,8 +63,8 @@ function MainPage() {
 
         {/* Section 2 */}
         <div className="flex flex-col h-screen py-3">
-          <div className="flex flex-row justify-between gap-4 items-baseline mb-8 section-2">
-            <div className="text-start rounded-lg flex flex-col items-center gap-3">
+          <div className="flex md:flex-row flex-col  justify-between gap-4 md:items-baseline items-center mb-8 section-2 ">
+            <div className="md:text-start text-center rounded-lg flex flex-col items-center gap-3">
               <Image
                 src="/time-is-money.png"
                 alt="Time is money icon"
@@ -74,7 +74,7 @@ function MainPage() {
               />
               <h3 className="text-2xl font-semibold">Спестявате време</h3>
             </div>
-            <div className="text-start rounded-lg flex flex-col items-center gap-3">
+            <div className="md:text-start text-center rounded-lg flex flex-col items-center gap-3">
               <Image
                 src="/efficacy.png"
                 alt="Time is money icon"
@@ -82,11 +82,9 @@ function MainPage() {
                 height={20}
                 className="rounded-full"
               />
-              <h3 className="text-start text-2xl font-semibold">
-                Увеличавате на продуктивността.
-              </h3>
+              <h3 className="text-2xl font-semibold">Увеличавате на продуктивността.</h3>
             </div>
-            <div className="text-start rounded-lg flex flex-col items-center gap-3">
+            <div className="md:text-start text-center rounded-lg flex flex-col items-center gap-3">
               <Image
                 src="/user.png"
                 alt="Time is money icon"
