@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { colorTheme } from '@/app/colors'
 import EarlyAccessButton from '../Ui/EarlyAccessButton'
 import Message from '../Message'
 
@@ -12,15 +13,16 @@ function MainPage() {
           <div className="flex justify-between flex-col md:flex-row">
             <div className="flex flex-col justify-evenly items-start md:w-2/5 gap-2 md:gap-0">
               <h1 className="text-3xl font-bold ">
-                Спестете до 30 минути всеки път в който попълвате някой документ.
+                Подобрете оперативната си ефективност с FormFly.
               </h1>
               <p className="mt-3 text-lg">
-                Нашето разширение за Chrome ви позволява да попълвате формуляри бързо и
-                лесно. Спестете време и увеличите вашата продуктивност с нашите интуитивни
-                функции.
+                Нашето разширение за Chrome ви помага да автоматизирате всички досадни
+                задачи, като попълва формулярите вместо вас. Така ще спестите часове
+                повтаряща се ръчна работа всяка седмица.
               </p>
-              <EarlyAccessButton />
+              <EarlyAccessButton color={colorTheme} />
             </div>
+
             <Image
               src="/main_page_image.png"
               alt="Image of a person with laptop"
@@ -28,8 +30,29 @@ function MainPage() {
               height={500}
             />
           </div>
+          <div className="flex flex-col gap-4 items-baseline mb-8 ">
+            <div className="text-center rounded-lg">
+              <h3 className="text-2xl font-semibold">Спестете време</h3>
+              {/* <p>
+                    Автоматизирайте рутинните задачи и фокусирайте се върху това, което
+                    има значение.
+                  </p> */}
+            </div>
+            <div className="text-center rounded-lg">
+              <h3 className="text-2xl font-semibold">
+                Увеличаване на производителността
+              </h3>
+            </div>
+            <div className="text-center rounded-lg">
+              <h3 className="text-2xl font-semibold">Избягване на грешки</h3>
+            </div>
+          </div>
           <div className="mt-1">
-            <h2 className="text-xl font-semibold">Гледайте нашето демо видео по-долу</h2>
+            <h2 className="text-xl font-semibold">Как работи?</h2>
+            <h2 className="text-xl font-semibold">
+              Гледайте демо за това как FormFly може да ви спести часове работа всяка
+              седмица.
+            </h2>
             <div style={{ height: '30rem' }} className="aspect-w-16 aspect-h-9 mt-4">
               <iframe
                 style={{ maxWidth: '810px' }}
@@ -40,6 +63,9 @@ function MainPage() {
                 height="100%"
               />
             </div>
+          </div>
+          <div className="py-6">
+            <EarlyAccessButton color={colorTheme} />
           </div>
         </div>
       </main>
